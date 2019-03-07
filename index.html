@@ -6,29 +6,44 @@
   <link rel="stylesheet" type="text/css" href="./theme.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./theme.css" rel="stylesheet" type="text/css">
   <title>ice</title>
 </head>
 <body>
-  <h1>Hej</h1>
+  <h1>Hjälp mej välja..</h1>
   <div class="inputSection">
     <div class="inputs">
-      <input placeholder="text"></input>
+      <input placeholder="Something"></input>
     </div>
     <button class="addOption">Add</button>
   </div>
   <div class="resultSection"></div>
-  <button>Go</button>
+  <button class="submit">Go</button>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
-    $(function ()   {
+    
+    $(function() {
       $('.resultSection').hide()
-
-      var add_option = function () {
+      var add_option = function() {
         $('.inputs').append('<input></input>')
       }
       $('.addOption').click(add_option)
-    })
+
+      var options = []
+      
+      var submit = function() {
+        $('.inputSection').hide()
+        $('.resultSection').css('display','flex')
+        $('input').each(function() {
+          options.push($(this).val())
+        })
+        var winner = options[Math.floor(Math.random() * options.length)]
+          console.log(winner)
+          $('.resultSection').text(winner)
+        }
+        $('.submit').click(submit)
+      })
   </script>
 </body>
 </html>

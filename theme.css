@@ -5,6 +5,7 @@ body {
     align-items: center;
     margin-top: 150px;
 }
+
 h1 {
     font-weight: lighter;
     font-size: 40px;
@@ -28,3 +29,10 @@ input {
 .addOption{
     margin-top: 10px;
 }
+.resultSection {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+  }
