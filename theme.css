@@ -4,30 +4,68 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 150px;
+    background-color: rgb(218, 209, 194);
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(168, 148, 80);
+    cursor: pointer;   
+}
+button:hover {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(223, 210, 168);
+    cursor: pointer;   
 }
 
 h1 {
     font-weight: lighter;
     font-size: 40px;
     letter-spacing: 2px;
-    margin-bottom: 0px ;
+    margin: auto;    
 }
-    
-.inputSection{
-    margin: 50px 0px 80px 0px;
-    width: 400px;
+
+input {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(168, 148, 80);
+}
+.addOption{
+    margin-top: 10px;
+
+}
+
+.imgLeft {
+    display: flex;
+    width:8%;
 }
 .inputs { 
     display: flex; 
     width: inherit;
     flex-direction: column;
+    
+}
+.inputSection{
+    margin: 50px 0px 80px 0px;
+    width: 400px;
 }
 
-input {
-    margin-top: 10px;
-}
-.addOption{
-    margin-top: 10px;
+.inputStyle {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(168, 148, 80);
 }
 .resultSection {
     height: 300px;
@@ -35,4 +73,5 @@ input {
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-weight: 300;
   }
